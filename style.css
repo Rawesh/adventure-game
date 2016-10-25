@@ -1,15 +1,46 @@
-* {
-	padding: 0px;
-	margin: 0px;
+body {
+	background-image: url("img/hall.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	color: white;	
 }
 
-body {
-	background-color: silver;
-	font-family: sans-serif;
+h2{
+	color: #b46033;
+}
+
+p{
+	color:#DEB887;
+	border-style: solid;
+	border-color:#ff5500; 
+	padding:5px;
 }
 
 #level_title {
 	font-size: 18px;
-	color: black;		
 	font-weight: bold;
+	color:#b46033 ;
 }
+
+#option1,#option2,#option3,#option4,#option5 {
+	display: none;
+
+}
+
+#level_image{
+	cursor: pointer;
+}
+
+button{
+	border-style: solid;
+	border-color: cyan;
+	border-radius: 10%;
+	height: 35px;
+	text-align: center;
+	background-color:	#7B68EE ;
+	color:cyan ; 
+	margin: 5px;
+	padding:10px;
+}
+

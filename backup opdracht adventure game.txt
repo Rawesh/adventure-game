@@ -1,3 +1,54 @@
+opdracht adventure games
+
+index.html------------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adventure Game</title>
+	<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<main>
+
+	<section id="status">
+
+		<h2>Ontsnap uit het huis.</h2>
+			<p>
+			Je bent gegijzeld door een persoon met zijn groepje, jouw taak is om te ontsnappen van hun zonder opgemerkt te worden door de slechte rikken. Maar dat gaat niet zo makkelijk, je had wat spullen bij je die moet je ook weer terug zien te krijgen.De spullen hebben ze ergens in het huis opgeborgen,ook kan je niet zomaar in kamers gaan omdat je er geen sleutels van heb, die kan je ergens vinden en zo kom je steeds verder in het huis.
+			</p>
+	</section>
+
+	<section id="level_title">Start het spel</section>
+
+	<nav>
+
+		<button id="option0" onclick="Level1()">START</button>
+		<button id="option1" onclick="Level2()">Optie 1</button>
+		<button id="option2" onclick="Level3()">Optie 2</button>
+		<button id="option3" onclick="Level4()">Optie 3</button>
+		<button id="option4" onclick="Level5()">optie 4</button>
+		<button id="option5" onclick="Level6()">optie 5</button>
+
+		<div id="items">
+
+		</div>
+		
+	</nav>
+
+
+</main>
+
+	<script src="js/game.js" type="text/javascript" ></script>
+</body>
+</html>
+
+
+game.js-----------------------------------------------------------------------------------
+
+
 // Dit zijn mijn voorwerpen
 var inventory = {
 	knife: 		false,
@@ -445,5 +496,53 @@ function Level11() {
 
 
 
+style.css-----------------------------------------------------------------------------------------------
+
+
+body {
+	background-image: url("img/hall.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	color: white;	
+}
+
+h2{
+	color: #b46033;
+}
+
+p{
+	color:#DEB887;
+	border-style: solid;
+	border-color:#ff5500; 
+	padding:5px;
+}
+
+#level_title {
+	font-size: 18px;
+	font-weight: bold;
+	color:#b46033 ;
+}
+
+#option1,#option2,#option3,#option4,#option5 {
+	display: none;
+
+}
+
+#level_image{
+	cursor: pointer;
+}
+
+button{
+	border-style: solid;
+	border-color: cyan;
+	border-radius: 10%;
+	height: 35px;
+	text-align: center;
+	background-color:	#7B68EE ;
+	color:cyan ; 
+	margin: 5px;
+	padding:10px;
+}
 
 

@@ -2,26 +2,38 @@
 <html>
 <head>
 	<title>Adventure Game</title>
-	<link href="css/style.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
 
 </head>
 <body>
 
 <main>
 
-	<section id="status"></section>
+	<section id="status">
 
-	<section id="level_title">Start</section>
+		<h2>Ontsnap uit het huis.</h2>
+			<p>
+			Je bent gegijzeld door een persoon met zijn groepje, jouw taak is om te ontsnappen van hun zonder opgemerkt te worden door de slechte rikken. Maar dat gaat niet zo makkelijk, je had wat spullen bij je die moet je ook weer terug zien te krijgen.De spullen hebben ze ergens in het huis opgeborgen,ook kan je niet zomaar in kamers gaan omdat je er geen sleutels van heb, die kan je ergens vinden en zo kom je steeds verder in het huis.
+			</p>
+	</section>
+
+	<section id="level_title">Start het spel</section>
 
 	<nav>
 
-		<button id="option1" onclick="javascript:Level1()">Optie 1</button>
-		<button id="option2">Optie 2</button>
-		<button id="option3">Optie 3</button>
+		<button id="option0" onclick="Level1()">START</button>
+		<button id="option1" onclick="Level2()">Optie 1</button>
+		<button id="option2" onclick="Level3()">Optie 2</button>
+		<button id="option3" onclick="Level4()">Optie 3</button>
+		<button id="option4" onclick="Level5()">optie 4</button>
+		<button id="option5" onclick="Level6()">optie 5</button>
 
+		<div id="items">
+
+		</div>
+		
 	</nav>
 
-	<img id="level_image" class="level_image" src="img/rpg.png">
 
 </main>
 
